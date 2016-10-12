@@ -9,7 +9,8 @@ Base on **Vue2**, **Laravel 5.3** wrapper for **ChartJs**. etc.
 #Notice
 - chart-components need to gulp with [webpack](https://laravel.tw/docs/5.3/elixir#webpack "Webpack")
 - vue-charts base on Vue 2
-- All we need has been set in **Laravel 5.3 Framework**
+- require hchs-vue-charts after require vue 2
+- All we need has been set in **Laravel >=5.3.16 Framework**
 
 #How to use
 1.Checkout your gulpfile.js in your laravel project  
@@ -32,9 +33,37 @@ Base on **Vue2**, **Laravel 5.3** wrapper for **ChartJs**. etc.
 
     elixir(mix => {
         mix.sass('app.scss')
-           .webpack('app.js');
+           .webpack('app.js');  // we just need to require 'hchs-vue-charts' in this file or somewhere else
     });
 ```
-2.
+2. open your app.js   
 
+```javascript
+    /**
+     * First we will load all of this project's JavaScript dependencies which
+     * include Vue and Vue Resource. This gives a great starting point for
+     * building robust, powerful web applications using Vue and Laravel.
+     */
+     
+	//By default the bootstrap file will require('vue');
+    require('./bootstrap'); 
+    
+    // just require('hchs-vue-charts'); after require('vue');
+    require('hchs-vue-charts'); 
+    
+    /**
+     * Next, we will create a fresh Vue application instance and attach it to
+     * the page. Then, you may begin adding components to this application
+     * or customize the JavaScript scaffolding to fit your unique needs.
+     */
+
+    Vue.component('example', require('./components/Example.vue'));
+
+    const app = new Vue({
+        el: '#app'
+    });
+```
+3. run gulp in your laravel project   
+
+	gulp
 
