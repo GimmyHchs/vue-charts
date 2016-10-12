@@ -70,7 +70,7 @@ Base on **Vue2**, **Laravel 5.3** wrapper for **ChartJs**. etc.
 4. modify your wellcome.blade.php or where you want to show the chart  
 
 
-```text
+```html
 	    <body>
         <div id="app" class="content">
             <chartjs-line></chartjs-line>
