@@ -94,6 +94,9 @@ Base on **Vue2**, **Laravel 5.3** wrapper for **ChartJs**. etc.
    
    <!--set script src-->
    <script src="{{asset('js/app.js')}}"></script> 
-    ```     
+   ```     
+
+
+
 5.Done
 ![]({{site.baseurl}}/https://github.com/hchstera/vue-charts/blob/master/pictures/welcome_demo.PNG?raw=true)
