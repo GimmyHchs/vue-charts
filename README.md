@@ -65,5 +65,5 @@ Base on **Vue2**, **Laravel 5.3** wrapper for **ChartJs**. etc.
 ```
 3. run gulp in your laravel project   
 
-	gulp
+		gulp
 
