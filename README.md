@@ -12,8 +12,9 @@ Base on **Vue2**, **Laravel 5.3** wrapper for **ChartJs**. etc.
 - All we need has been set in **Laravel 5.3 Framework**
 
 #How to use
-1.Checkout your gulpfile.js in your laravel project
-    ```javascript
+1.Checkout your gulpfile.js in your laravel project  
+
+```javascript
     const elixir = require('laravel-elixir');
 
     require('laravel-elixir-vue-2');
@@ -33,7 +34,7 @@ Base on **Vue2**, **Laravel 5.3** wrapper for **ChartJs**. etc.
         mix.sass('app.scss')
            .webpack('app.js');
     });
-    ```
+```
 2.
 
 
