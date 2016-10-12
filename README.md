@@ -99,4 +99,4 @@ Base on **Vue2**, **Laravel 5.3** wrapper for **ChartJs**. etc.
 
 
 5.Done
-![](https://raw.githubusercontent.com/hchstera/vue-charts/blob/master/pictures/welcome_demo.PNG)
+![](https://raw.githubusercontent.com/hchstera/vue-charts/pictures/welcome_demo.PNG)
