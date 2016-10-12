@@ -13,7 +13,7 @@ Base on **Vue2**, **Laravel 5.3** wrapper for **ChartJs**. etc.
 - All we need has been set in **Laravel Framework  >=5.3.16**
 
 #How to use
-1.Checkout your gulpfile.js in your laravel project  
+1. Checkout your gulpfile.js in your laravel project  
 
 ```javascript
     const elixir = require('laravel-elixir');
@@ -71,7 +71,7 @@ Base on **Vue2**, **Laravel 5.3** wrapper for **ChartJs**. etc.
 
 
 ```html
-	    <body>
+   <body>
         <div id="app" class="content">
             <chartjs-line></chartjs-line>
             <div class="title m-b-md">
@@ -86,7 +86,7 @@ Base on **Vue2**, **Laravel 5.3** wrapper for **ChartJs**. etc.
                 <a href="https://github.com/laravel/laravel">GitHub</a>
             </div>
         </div>
-        </body>
-        <script src="{{asset('js/app.js')}}"></script> 
+   </body>
+   <script src="{{asset('js/app.js')}}"></script> 
     ```
 
