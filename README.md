@@ -67,12 +67,16 @@ Base on **Vue2**, **Laravel 5.3** wrapper for **ChartJs**. etc.
 
 		gulp
         
-4.modify your wellcome.blade.php or where you want to show the chart  
-
+4.modify your wellcome.blade.php or where you want to show the chart
+- give vue root id
+- add line chart component
+- don't forget your script file
 
 ```html
    <body>
+        <!--vue root id="app"-->
         <div id="app" class="content">
+            <!--line chart component-->
             <chartjs-line></chartjs-line>
             <div class="title m-b-md">
                 Laravel
@@ -87,6 +91,7 @@ Base on **Vue2**, **Laravel 5.3** wrapper for **ChartJs**. etc.
             </div>
         </div>
    </body>
+   
+   <!--set script src-->
    <script src="{{asset('js/app.js')}}"></script> 
     ```
-
