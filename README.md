@@ -10,7 +10,7 @@ Base on **Vue2**, **Laravel 5.3** wrapper for **ChartJs**. etc.
 - chart-components need to gulp with [webpack](https://laravel.tw/docs/5.3/elixir#webpack "Webpack")
 - vue-charts base on Vue 2
 - require hchs-vue-charts after require vue 2
-- All we need has been set in **Laravel >=5.3.16 Framework**
+- All we need has been set in **Laravel Framework  >=5.3.16**
 
 #How to use
 1.Checkout your gulpfile.js in your laravel project  
@@ -66,4 +66,24 @@ Base on **Vue2**, **Laravel 5.3** wrapper for **ChartJs**. etc.
 3. run gulp in your laravel project   
 
 		gulp
+        
+4. modify your wellcome.blade.php or where you want to show the chart   
+
+	    <body>
+        <div id="app" class="content">
+            <chartjs-line></chartjs-line>
+            <div class="title m-b-md">
+                Laravel
+            </div>
+
+            <div class="links">
+                <a href="https://laravel.com/docs">Documentation</a>
+                <a href="https://laracasts.com">Laracasts</a>
+                <a href="https://laravel-news.com">News</a>
+                <a href="https://forge.laravel.com">Forge</a>
+                <a href="https://github.com/laravel/laravel">GitHub</a>
+            </div>
+        </div>
+        </body>
+        <script src="{{asset('js/app.js')}}"></script>
 
