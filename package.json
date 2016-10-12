@@ -1,0 +1,25 @@
+{
+  "name": "vue-charts",
+  "version": "1.0.0",
+  "description": "Base on Vue2.0 wrapper for ChartJs. etc.",
+  "main": "vue-charts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hchstera/vue-charts.git"
+  },
+  "keywords": [
+    "vue",
+    "chart",
+    "chart.js",
+    "chartjs"
+  ],
+  "author": "hchstera",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hchstera/vue-charts/issues"
+  },
+  "homepage": "https://github.com/hchstera/vue-charts#readme"
+}
