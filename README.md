@@ -67,8 +67,10 @@ Base on **Vue2**, **Laravel 5.3** wrapper for **ChartJs**. etc.
 
 		gulp
         
-4. modify your wellcome.blade.php or where you want to show the chart   
+4. modify your wellcome.blade.php or where you want to show the chart  
 
+
+```text
 	    <body>
         <div id="app" class="content">
             <chartjs-line></chartjs-line>
@@ -85,5 +87,6 @@ Base on **Vue2**, **Laravel 5.3** wrapper for **ChartJs**. etc.
             </div>
         </div>
         </body>
-        <script src="{{asset('js/app.js')}}"></script>
+        <script src="{{asset('js/app.js')}}"></script> 
+    ```
 
