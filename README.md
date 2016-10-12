@@ -13,7 +13,7 @@ Base on **Vue2**, **Laravel 5.3** wrapper for **ChartJs**. etc.
 - All we need has been set in **Laravel Framework  >=5.3.16**
 
 #How to use
-1. Checkout your gulpfile.js in your laravel project  
+1.Checkout your gulpfile.js in your laravel project  
 
 ```javascript
     const elixir = require('laravel-elixir');
@@ -36,7 +36,7 @@ Base on **Vue2**, **Laravel 5.3** wrapper for **ChartJs**. etc.
            .webpack('app.js');  // we just need to require 'hchs-vue-charts' in this file or somewhere else
     });
 ```
-2. open your app.js   
+2.open your app.js   
 
 ```javascript
     /**
@@ -63,11 +63,11 @@ Base on **Vue2**, **Laravel 5.3** wrapper for **ChartJs**. etc.
         el: '#app'
     });
 ```
-3. run gulp in your laravel project   
+3.run gulp in your laravel project   
 
 		gulp
         
-4. modify your wellcome.blade.php or where you want to show the chart  
+4.modify your wellcome.blade.php or where you want to show the chart  
 
 
 ```html
