@@ -24,7 +24,11 @@ export default {
         bordercolor: {
             type: String,
             default: () => "rgba(75,192,192,1)",
-        }
+        },
+        backgroundcolor:{
+            type: String,
+            default: () => "rgba(75,192,192,0.4)",
+        },
     },
     data() {
         return {
@@ -34,7 +38,7 @@ export default {
                     label: "My First dataset",
                     fill: this.fill,
                     lineTension:  this.linetension,
-                    backgroundColor: "rgba(75,192,192,0.4)",
+                    backgroundColor: this.backgroundcolor,
                     borderColor: this.bordercolor,
                     borderCapStyle: 'butt',
                     borderDash: [],
