@@ -1,6 +1,11 @@
 # vue-charts
 Base on **Vue2**, **Laravel 5.3** wrapper for **ChartJs**. etc.  
+-[Vue js](https://vuejs.org/)  
+-[Laravel](https://laravel.com/)  
+-[Chart js](http://www.chartjs.org/)   
 
+
+# NPM Package  
 [NPM Package](https://www.npmjs.com/package/hchs-vue-charts)
 
 #Install
