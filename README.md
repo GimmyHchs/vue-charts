@@ -22,7 +22,7 @@ Base on **Vue2**, wrapper for **ChartJs**. etc.
 - require hchs-vue-charts before require vue 2
 
 #How to use --- using CDN
-1. build a page
+1.build a page
 ```html
     <body>
         <div id="app">
@@ -44,7 +44,7 @@ Base on **Vue2**, wrapper for **ChartJs**. etc.
    <!--set script src-->
    <script src="{{asset('js/app.js')}}"></script> 
    ```   
-2. Done!   
+2.Done!   
 [CDN demo](http://vue-charts-demo.hchspersonal.tk/demo.html)   
 ![](https://raw.githubusercontent.com/hchstera/vue-charts/master/pictures/cdn_demo.png)
 
