@@ -32,6 +32,7 @@ export default {
     },
     data() {
         return {
+            type: 'line',
             chart_data: {
                 labels: this.labels,
                 datasets: [{
