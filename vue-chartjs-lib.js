@@ -1,8 +1,8 @@
 export default{
     props: {
-        type: {
-            type: String,
-            default: () => 'line',
+        beginzero:{
+            type: Boolean,
+            default: () => false,
         },
         labels: {
             type: Array,
@@ -23,6 +23,7 @@ export default{
     },
     data () {
         return {
+            type : null,
             datasets : null,
             canvas : null,
             context : null,
@@ -63,6 +64,13 @@ export default{
                 options: {
                     responsive : this.options.responsive,
                     maintainAspectRatio : this.options.maintainAspectRatio,
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero:this.beginzero
+                            }
+                        }]
+                    },
                 }
             });
             // console.log(this.chart);
