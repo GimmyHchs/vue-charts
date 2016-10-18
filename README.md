@@ -4,7 +4,7 @@ Base on **Vue2**, wrapper for **ChartJs**. etc.
 -[Laravel](https://laravel.com/)  
 -[Chart js](http://www.chartjs.org/) 
 # Easy To Render a Chart
-![](https://raw.githubusercontent.com/hchstera/vue-charts/master/pictures/easy_use.PNG)
+![](https://raw.githubusercontent.com/hchstera/vue-charts/master/pictures/easy_use.png)
 
 
 # NPM Package  
