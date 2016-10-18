@@ -6,6 +6,10 @@ Base on **Vue2**, wrapper for **ChartJs**. etc.
 # Easy To Render a Chart
 ![](https://raw.githubusercontent.com/hchstera/vue-charts/master/pictures/easy_use.png)
 
+# Document and Demo
+[Home page](http://vue-charts-demo.hchspersonal.tk/)    
+[Line](http://vue-charts-demo.hchspersonal.tk/line)   
+[Bar](http://vue-charts-demo.hchspersonal.tk/bar) 
 
 # NPM Package  
 [NPM Package](https://www.npmjs.com/package/hchs-vue-charts)
@@ -18,7 +22,30 @@ Base on **Vue2**, wrapper for **ChartJs**. etc.
 - require hchs-vue-charts before require vue 2
 
 #How to use --- using CDN
+1. build a page
+```html
+    <body>
+        <div id="app" class="container">
+            <chartjs-line></chartjs-line>
+        </div>
+    </body>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.js"></script>
+    <script src="js/vue-charts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.min.js"></script>
+    <script type="text/javascript">
+        const app = new Vue({
+            el: '#app',
+            components: {
+                'chartjs-line': chartjs_line,
+            }
+        });
+    </script>
+   <!--set script src-->
+   <script src="{{asset('js/app.js')}}"></script> 
+   ```   
+2. Done!   
+[CDN demo](http://vue-charts-demo.hchspersonal.tk/demo.html)   
 
 
 #How to use --- I'm using Laravel
