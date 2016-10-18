@@ -1,5 +1,3 @@
-// window.Vue = require('vue');
-// var ChartJS = require('src/chart.js')
 if(typeof Chart === "undefined")
     throw "ChartJS is undefined";
 // window.Chart = require('chart.js');
