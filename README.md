@@ -25,7 +25,7 @@ Base on **Vue2**, wrapper for **ChartJs**. etc.
 1. build a page
 ```html
     <body>
-        <div id="app" class="container">
+        <div id="app">
             <chartjs-line></chartjs-line>
         </div>
     </body>
