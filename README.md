@@ -84,8 +84,12 @@ Base on **Vue2**, wrapper for **ChartJs**. etc.
 	//By default the bootstrap file will require('vue');
     require('./bootstrap'); 
     
-    // just require('hchs-vue-charts'); after require('vue');
-    require('hchs-vue-charts'); 
+    // npm package
+    window.VueCharts = require('hchs-vue-charts');
+    // register component, here we just register chartjs_line
+    Vue.component('chartjs-line', VueCharts.chartjs_line);
+    
+    
     
     /**
      * Next, we will create a fresh Vue application instance and attach it to
