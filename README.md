@@ -21,7 +21,7 @@ Base on **Vue2**, wrapper for **ChartJs**. etc.
 - vue-charts base on Vue 2
 - require hchs-vue-charts before require vue 2
 
-#How to use --- using CDN
+#How to use --- CDN
 1.build a page
 ```html
     <body>
