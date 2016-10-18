@@ -1,8 +1,10 @@
 # vue-charts
-Base on **Vue2**, **Laravel 5.3** wrapper for **ChartJs**. etc.  
+Base on **Vue2**, wrapper for **ChartJs**. etc.  
 -[Vue js](https://vuejs.org/)  
 -[Laravel](https://laravel.com/)  
--[Chart js](http://www.chartjs.org/)   
+-[Chart js](http://www.chartjs.org/) 
+# Easy To Render a Chart
+![](https://raw.githubusercontent.com/hchstera/vue-charts/master/pictures/easy_use.PNG)
 
 
 # NPM Package  
@@ -12,12 +14,14 @@ Base on **Vue2**, **Laravel 5.3** wrapper for **ChartJs**. etc.
 	npm install hchs-vue-charts
 
 #Notice
-- chart-components need to gulp with [webpack](https://laravel.tw/docs/5.3/elixir#webpack "Webpack")
 - vue-charts base on Vue 2
-- require hchs-vue-charts after require vue 2
-- All we need has been set in **Laravel Framework  >=5.3.16**
+- require hchs-vue-charts before require vue 2
 
-#How to use
+#How to use --- using CDN
+
+
+
+#How to use --- I'm using Laravel
 1.Checkout your gulpfile.js in your laravel project  
 
 ```javascript
