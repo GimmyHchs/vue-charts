@@ -46,7 +46,7 @@ Base on **Vue2**, wrapper for **ChartJs**. etc.
    ```   
 2. Done!   
 [CDN demo](http://vue-charts-demo.hchspersonal.tk/demo.html)   
-
+![](https://raw.githubusercontent.com/hchstera/vue-charts/master/pictures/cdm_demo.png)
 
 #How to use --- I'm using Laravel
 1.Checkout your gulpfile.js in your laravel project  
