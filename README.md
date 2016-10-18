@@ -1,8 +1,9 @@
 # vue-charts
 Base on **Vue2**, wrapper for **ChartJs**. etc.  
 -[Vue js](https://vuejs.org/)  
--[Laravel](https://laravel.com/)  
--[Chart js](http://www.chartjs.org/) 
+-[Chart js](http://www.chartjs.org/)  
+-Work well with **Laravel**
+
 # Easy To Render a Chart
 ![](https://raw.githubusercontent.com/hchstera/vue-charts/master/pictures/easy_use.png)
 
@@ -110,7 +111,7 @@ Base on **Vue2**, wrapper for **ChartJs**. etc.
 4.modify your wellcome.blade.php or where you want to show the chart
 - give vue root id
 - add line chart component
-- don't forget your script file
+- don't forget your script source
 
 ```html
    <body>
