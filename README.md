@@ -19,8 +19,8 @@ Base on **Vue2**, wrapper for **ChartJs**. etc.
 	npm install hchs-vue-charts
 
 #Notice
-- vue-charts base on Vue 2
-- require hchs-vue-charts before require vue 2
+- vue-charts base on Vue 2  
+- vue-charts base on Chart.js 2  
 
 #How to use --- CDN
 1.build a page
