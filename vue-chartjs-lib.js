@@ -2,7 +2,11 @@ export default{
     props: {
         beginzero:{
             type: Boolean,
-            default: () => false,
+            default: () => true,
+        },
+        datalabel: {
+            type: String,
+            default: () => 'My dataset',
         },
         labels: {
             type: Array,
@@ -20,6 +24,15 @@ export default{
             type: Number,
             default: () => null,
         },
+        bordercolor: {
+            type: String,
+            default: () => "rgba(75,192,192,1)",
+        },
+        backgroundcolor:{
+            type: String,
+            default: () => "rgba(75,192,192,0.4)",
+        },
+
     },
     data () {
         return {
@@ -28,13 +41,20 @@ export default{
             canvas : null,
             context : null,
             chart: null,
-            options :{
-                responsive:false,
-                maintainAspectRatio:false,
-            },
             chart_data : {
                 labels: this.labels,
                 datasets: this.datasets,
+            },
+            options :{
+                responsive:false,
+                maintainAspectRatio:false,
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero:this.beginzero
+                        }
+                    }]
+                },
             },
         };
     },
@@ -61,17 +81,7 @@ export default{
             this.chart = new Chart(this.context, {
                 type: this.type,
                 data: this.chart_data,
-                options: {
-                    responsive : this.options.responsive,
-                    maintainAspectRatio : this.options.maintainAspectRatio,
-                    scales: {
-                        yAxes: [{
-                            ticks: {
-                                beginAtZero:this.beginzero
-                            }
-                        }]
-                    },
-                }
+                options: this.options,
             });
             // console.log(this.chart);
         },
