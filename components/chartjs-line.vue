@@ -7,16 +7,6 @@ export default {
         vue_charts.default,
     ],
     props: {
-        height: {
-            type: Number,
-        },
-        width: {
-            type: Number,
-        },
-        datalabel: {
-            type: String,
-            default: () => 'My dataset',
-        },
         fill:{
             type: Boolean,
             default: false,
@@ -24,14 +14,6 @@ export default {
         linetension: {
             type: Number,
             default: () => 0.2,
-        },
-        bordercolor: {
-            type: String,
-            default: () => "rgba(75,192,192,1)",
-        },
-        backgroundcolor:{
-            type: String,
-            default: () => "rgba(75,192,192,0.4)",
         },
     },
     data() {

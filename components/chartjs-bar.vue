@@ -7,16 +7,6 @@ export default {
         vue_charts.default,
     ],
     props: {
-        height: {
-            type: Number,
-        },
-        width: {
-            type: Number,
-        },
-        datalabel: {
-            type: String,
-            default: () => 'My dataset',
-        },
         backgroundcolor:{
             type: Array,
             default: () => [

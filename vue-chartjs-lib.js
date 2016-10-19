@@ -4,6 +4,10 @@ export default{
             type: Boolean,
             default: () => false,
         },
+        datalabel: {
+            type: String,
+            default: () => 'My dataset',
+        },
         labels: {
             type: Array,
             default: () => ['first', 'second', 'third', 'fourth'],
@@ -20,6 +24,15 @@ export default{
             type: Number,
             default: () => null,
         },
+        bordercolor: {
+            type: String,
+            default: () => "rgba(75,192,192,1)",
+        },
+        backgroundcolor:{
+            type: String,
+            default: () => "rgba(75,192,192,0.4)",
+        },
+
     },
     data () {
         return {
@@ -31,6 +44,15 @@ export default{
             options :{
                 responsive:false,
                 maintainAspectRatio:false,
+                responsive : false,
+                maintainAspectRatio : false,
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero:this.beginzero
+                        }
+                    }]
+                },
             },
             chart_data : {
                 labels: this.labels,
@@ -61,17 +83,7 @@ export default{
             this.chart = new Chart(this.context, {
                 type: this.type,
                 data: this.chart_data,
-                options: {
-                    responsive : this.options.responsive,
-                    maintainAspectRatio : this.options.maintainAspectRatio,
-                    scales: {
-                        yAxes: [{
-                            ticks: {
-                                beginAtZero:this.beginzero
-                            }
-                        }]
-                    },
-                }
+                options: this.options,
             });
             // console.log(this.chart);
         },
