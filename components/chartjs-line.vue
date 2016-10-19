@@ -13,6 +13,10 @@ export default {
         width: {
             type: Number,
         },
+        datalabel: {
+            type: String,
+            default: () => 'My dataset',
+        },
         fill:{
             type: Boolean,
             default: false,
@@ -36,7 +40,7 @@ export default {
             chart_data: {
                 labels: this.labels,
                 datasets: [{
-                    label: "My First dataset",
+                    label: this.datalabel,
                     fill: this.fill,
                     lineTension:  this.linetension,
                     backgroundColor: this.backgroundcolor,

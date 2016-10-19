@@ -13,6 +13,10 @@ export default {
         width: {
             type: Number,
         },
+        datalabel: {
+            type: String,
+            default: () => 'My dataset',
+        },
         backgroundcolor:{
             type: Array,
             default: () => [
@@ -42,7 +46,7 @@ export default {
             chart_data: {
                 labels: this.labels,
                 datasets: [{
-                    label: "My First dataset",
+                    label: this.datalabel,
                     backgroundColor: this.backgroundcolor,
                     borderColor: this.bordercolor,
                     borderWidth: 1,
