@@ -42,8 +42,6 @@ Base on **Vue2**, wrapper for **ChartJs**. etc.
             }
         });
     </script>
-   <!--set script src-->
-   <script src="{{asset('js/app.js')}}"></script> 
    ```   
 2.Done!   
 [CDN demo](http://vue-charts-demo.hchspersonal.tk/demo.html)   
