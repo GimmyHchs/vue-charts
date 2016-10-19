@@ -7,7 +7,14 @@ export default {
         vue_charts.default,
     ],
     props: {
-
+        pointbordercolor: {
+            type: String,
+            default: () => "#fff",
+        },
+        pointbackgroundcolor: {
+            type: String,
+            default: () => "rgba(179,181,198,1)",
+        }
     },
     data() {
         return {
@@ -18,14 +25,21 @@ export default {
                     label: this.datalabel,
                     backgroundColor: this.backgroundcolor,
                     borderColor: this.bordercolor,
-                    pointBackgroundColor: "rgba(179,181,198,1)",
-                    pointBorderColor: "#fff",
+                    pointBackgroundColor: this.pointbackgroundcolor,
+                    pointBorderColor: this.pointbordercolor,
                     pointHoverBackgroundColor: "#fff",
                     pointHoverBorderColor: "rgba(179,181,198,1)",
                     data: this.data
-                }, ],
+                }],
             },
-            
+            options: {
+                scale: {
+                    reverse: false,
+                    ticks: {
+                        beginAtZero: this.beginzero
+                    }
+                }
+            },
         };
     },
 }

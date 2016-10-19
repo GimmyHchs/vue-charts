@@ -2,7 +2,7 @@ export default{
     props: {
         beginzero:{
             type: Boolean,
-            default: () => false,
+            default: () => true,
         },
         datalabel: {
             type: String,
@@ -41,11 +41,13 @@ export default{
             canvas : null,
             context : null,
             chart: null,
+            chart_data : {
+                labels: this.labels,
+                datasets: this.datasets,
+            },
             options :{
                 responsive:false,
                 maintainAspectRatio:false,
-                responsive : false,
-                maintainAspectRatio : false,
                 scales: {
                     yAxes: [{
                         ticks: {
@@ -53,10 +55,6 @@ export default{
                         }
                     }]
                 },
-            },
-            chart_data : {
-                labels: this.labels,
-                datasets: this.datasets,
             },
         };
     },

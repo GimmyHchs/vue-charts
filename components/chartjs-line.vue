@@ -7,6 +7,10 @@ export default {
         vue_charts.default,
     ],
     props: {
+        beginzero:{
+            type: Boolean,
+            default: false,
+        },
         fill:{
             type: Boolean,
             default: false,
@@ -15,6 +19,14 @@ export default {
             type: Number,
             default: () => 0.2,
         },
+        pointbordercolor: {
+            type: String,
+            default: () => "rgba(75,192,192,1)",
+        },
+        pointbackgroundcolor: {
+            type: String,
+            default: () => "#fff",
+        }
     },
     data() {
         return {
@@ -31,8 +43,8 @@ export default {
                     borderDash: [],
                     borderDashOffset: 0.0,
                     borderJoinStyle: 'miter',
-                    pointBorderColor: "rgba(75,192,192,1)",
-                    pointBackgroundColor: "#fff",
+                    pointBorderColor: this.pointbordercolor,
+                    pointBackgroundColor: this.pointbackgroundcolor,
                     pointBorderWidth: 1,
                     pointHoverRadius: 5,
                     pointHoverBackgroundColor: "rgba(75,192,192,1)",
