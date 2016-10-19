@@ -1,9 +1,16 @@
 # vue-charts
-Base on **Vue2**, **Laravel 5.3** wrapper for **ChartJs**. etc.  
+Base on **Vue2**, wrapper for **ChartJs**. etc.  
 -[Vue js](https://vuejs.org/)  
--[Laravel](https://laravel.com/)  
--[Chart js](http://www.chartjs.org/)   
+-[Chart js](http://www.chartjs.org/)  
+-Work well with [Laravel](https://laravel.com/) 
 
+# Easy To Render a Chart
+![](https://raw.githubusercontent.com/hchstera/vue-charts/master/pictures/easy_use.png)
+
+# Document and Demo
+[Home page](http://vue-charts-demo.hchspersonal.tk/)    
+[Line](http://vue-charts-demo.hchspersonal.tk/line)   
+[Bar](http://vue-charts-demo.hchspersonal.tk/bar) 
 
 # NPM Package  
 [NPM Package](https://www.npmjs.com/package/hchs-vue-charts)
@@ -12,12 +19,37 @@ Base on **Vue2**, **Laravel 5.3** wrapper for **ChartJs**. etc.
 	npm install hchs-vue-charts
 
 #Notice
-- chart-components need to gulp with [webpack](https://laravel.tw/docs/5.3/elixir#webpack "Webpack")
 - vue-charts base on Vue 2
-- require hchs-vue-charts after require vue 2
-- All we need has been set in **Laravel Framework  >=5.3.16**
+- require hchs-vue-charts before require vue 2
 
-#How to use
+#How to use --- CDN
+1.build a page
+```html
+    <body>
+        <div id="app">
+            <chartjs-line></chartjs-line>
+        </div>
+    </body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.js"></script>
+    <script src="js/vue-charts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.min.js"></script>
+    <script type="text/javascript">
+        const app = new Vue({
+            el: '#app',
+            components: {
+                'chartjs-line': chartjs_line,
+            }
+        });
+    </script>
+   <!--set script src-->
+   <script src="{{asset('js/app.js')}}"></script> 
+   ```   
+2.Done!   
+[CDN demo](http://vue-charts-demo.hchspersonal.tk/demo.html)   
+![](https://raw.githubusercontent.com/hchstera/vue-charts/master/pictures/cdn_demo.png)
+
+#How to use --- I'm using Laravel
 1.Checkout your gulpfile.js in your laravel project  
 
 ```javascript
@@ -53,8 +85,12 @@ Base on **Vue2**, **Laravel 5.3** wrapper for **ChartJs**. etc.
 	//By default the bootstrap file will require('vue');
     require('./bootstrap'); 
     
-    // just require('hchs-vue-charts'); after require('vue');
-    require('hchs-vue-charts'); 
+    // npm package
+    window.VueCharts = require('hchs-vue-charts');
+    // register component, here we just register chartjs_line
+    Vue.component('chartjs-line', VueCharts.chartjs_line);
+    
+    
     
     /**
      * Next, we will create a fresh Vue application instance and attach it to
@@ -75,7 +111,7 @@ Base on **Vue2**, **Laravel 5.3** wrapper for **ChartJs**. etc.
 4.modify your wellcome.blade.php or where you want to show the chart
 - give vue root id
 - add line chart component
-- don't forget your script file
+- don't forget your script source
 
 ```html
    <body>
