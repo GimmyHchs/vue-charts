@@ -2,7 +2,7 @@
 Base on **Vue2**, wrapper for **ChartJs**. etc.  
 -[Vue js](https://vuejs.org/)  
 -[Chart js](http://www.chartjs.org/)  
--Work well with [Laravel](https://laravel.com/) 
+-Work well with [Laravel](https://laravel.com/)
 
 # Easy To Render a Chart
 ![](https://raw.githubusercontent.com/hchstera/vue-charts/master/pictures/easy_use.png)
@@ -10,7 +10,7 @@ Base on **Vue2**, wrapper for **ChartJs**. etc.
 # Document and Demo
 [Home page](http://vue-charts-demo.hchspersonal.tk/)    
 [Line](http://vue-charts-demo.hchspersonal.tk/line)   
-[Bar](http://vue-charts-demo.hchspersonal.tk/bar) 
+[Bar](http://vue-charts-demo.hchspersonal.tk/bar)
 
 # NPM Package  
 [NPM Package](https://www.npmjs.com/package/hchs-vue-charts)
@@ -43,7 +43,7 @@ Base on **Vue2**, wrapper for **ChartJs**. etc.
         });
     </script>
    <!--set script src-->
-   <script src="{{asset('js/app.js')}}"></script> 
+   <script src="{{asset('js/app.js')}}"></script>
    ```   
 2.Done!   
 [CDN demo](http://vue-charts-demo.hchspersonal.tk/demo.html)   
@@ -81,17 +81,17 @@ Base on **Vue2**, wrapper for **ChartJs**. etc.
      * include Vue and Vue Resource. This gives a great starting point for
      * building robust, powerful web applications using Vue and Laravel.
      */
-     
+
 	//By default the bootstrap file will require('vue');
-    require('./bootstrap'); 
-    
+    require('./bootstrap');
+
     // npm package
     window.VueCharts = require('hchs-vue-charts');
     // register component, here we just register chartjs_line
     Vue.component('chartjs-line', VueCharts.chartjs_line);
-    
-    
-    
+
+
+
     /**
      * Next, we will create a fresh Vue application instance and attach it to
      * the page. Then, you may begin adding components to this application
@@ -107,11 +107,12 @@ Base on **Vue2**, wrapper for **ChartJs**. etc.
 3.run gulp in your laravel project   
 
 		gulp
-        
+
 4.modify your wellcome.blade.php or where you want to show the chart
 - give vue root id
 - add line chart component
 - don't forget your script source
+
 
 ```html
    <body>
@@ -132,9 +133,9 @@ Base on **Vue2**, wrapper for **ChartJs**. etc.
             </div>
         </div>
    </body>
-   
+
    <!--set script src-->
-   <script src="{{asset('js/app.js')}}"></script> 
+   <script src="{{asset('js/app.js')}}"></script>
    ```     
 
 
