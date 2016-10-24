@@ -27,7 +27,7 @@ Base on **Vue2**, wrapper for **ChartJs**.
 - vue-charts base on Vue 2  
 - vue-charts base on Chart.js 2  
 
-#How to use --- CDN
+#How to use --- dist & CDN
 1.build a page
 ```html
     <body>
