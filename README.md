@@ -3,7 +3,7 @@ Base on **Vue2**, wrapper for **ChartJs**.
 -[Vue js](https://vuejs.org/)  
 -[Chart js](http://www.chartjs.org/)  
 -Work well with [Laravel](https://laravel.com/)  
--Degree of completion 40%  
+-Degree of completion 50%  
 
 # Easy To Render a Chart
 ![](https://raw.githubusercontent.com/hchstera/vue-charts/master/pictures/easy_use.png)
@@ -13,6 +13,9 @@ Base on **Vue2**, wrapper for **ChartJs**.
 [Line](http://vue-charts-demo.hchspersonal.tk/line)   
 [Bar](http://vue-charts-demo.hchspersonal.tk/bar)   
 [Radar](http://vue-charts-demo.hchspersonal.tk/radar)   
+[Polar Area](http://vue-charts-demo.hchspersonal.tk/polar-area)   
+[Pie](http://vue-charts-demo.hchspersonal.tk/pie)   
+[Doughnut](http://vue-charts-demo.hchspersonal.tk/doughnut)   
 
 # NPM Package  
 [NPM Package](https://www.npmjs.com/package/hchs-vue-charts)

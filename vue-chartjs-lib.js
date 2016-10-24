@@ -30,6 +30,10 @@ export default{
         backgroundcolor:{
             default: () => "rgba(75,192,192,0.4)",
         },
+        scalesdisplay:{
+            type: Boolean,
+            default: () => true,
+        }
 
     },
     data () {
@@ -48,8 +52,9 @@ export default{
                 maintainAspectRatio:false,
                 scales: {
                     yAxes: [{
+                        display: this.scalesdisplay,
                         ticks: {
-                            beginAtZero:this.beginzero
+                            beginAtZero:this.beginzero,
                         }
                     }]
                 },
