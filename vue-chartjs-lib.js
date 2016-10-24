@@ -25,11 +25,9 @@ export default{
             default: () => null,
         },
         bordercolor: {
-            type: String,
             default: () => "rgba(75,192,192,1)",
         },
         backgroundcolor:{
-            type: String,
             default: () => "rgba(75,192,192,0.4)",
         },
 

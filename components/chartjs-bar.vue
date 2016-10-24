@@ -6,14 +6,6 @@ export default {
     mixins: [
         vue_charts.default,
     ],
-    props: {
-        backgroundcolor:{
-            default: () => "rgba(75,192,192,0.4)",
-        },
-        bordercolor: {
-            default: () => "rgba(75,192,192,1)",
-        },
-    },
     data() {
         return {
             type: 'bar',

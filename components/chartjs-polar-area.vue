@@ -7,36 +7,26 @@ export default {
         vue_charts.default,
     ],
     props: {
-        pointbordercolor: {
-            default: () => "#fff",
+        hoverbackgroundcolor: {
+            default: () => "rgba(75,192,192,0.6)",
         },
-        pointbackgroundcolor: {
+        hoverbordercolor: {
             default: () => "rgba(179,181,198,1)",
         }
     },
     data() {
         return {
-            type: 'radar',
+            type: 'polarArea',
             chart_data: {
                 labels: this.labels,
                 datasets: [{
                     label: this.datalabel,
                     backgroundColor: this.backgroundcolor,
                     borderColor: this.bordercolor,
-                    pointBackgroundColor: this.pointbackgroundcolor,
-                    pointBorderColor: this.pointbordercolor,
-                    pointHoverBackgroundColor: "#fff",
-                    pointHoverBorderColor: "rgba(179,181,198,1)",
+                    hoverBackgroundColor: this.hoverbackgroundcolor,
+                    hoverBorderColor: this.hoverbackgroundcolor,
                     data: this.data
                 }],
-            },
-            options: {
-                scale: {
-                    reverse: false,
-                    ticks: {
-                        beginAtZero: this.beginzero
-                    }
-                }
             },
         };
     },

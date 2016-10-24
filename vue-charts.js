@@ -9,3 +9,4 @@ window.chartjs_bar = require('./components/chartjs-bar.vue');
 // 33.1kb here
 window.chartjs_radar = require('./components/chartjs-radar.vue');
 // 42.5kb here
+window.chartjs_polar_area = require('./components/chartjs-polar-area.vue');
