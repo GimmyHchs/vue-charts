@@ -27,14 +27,17 @@ export default{
         bordercolor: {
             default: () => "rgba(75,192,192,1)",
         },
-        backgroundcolor:{
+        backgroundcolor: {
             default: () => "rgba(75,192,192,0.4)",
         },
-        scalesdisplay:{
+        scalesdisplay: {
             type: Boolean,
             default: () => true,
+        },
+        target: {
+            type: String,
+            default: () => null,
         }
-
     },
     data () {
         return {
@@ -75,6 +78,25 @@ export default{
         setDatasets(val){
             this.datasets = val;
         },
+        initTargetCanvas(){
+            if(this.target==null){
+                this.canvas = this.$refs.canvas;
+                this.context = this.$refs.canvas.getContext('2d');
+                this.renderChart();
+            }
+            else {
+                this.canvas = document.getElementById(this.target);
+                this.context = document.getElementById(this.target).getContext('2d');
+                if(typeof datasets == 'undefined')
+                    window.datasets = [];
+                if(typeof datasets[this.target] == 'undefined')
+                {
+                    window.datasets[this.target] =[];
+                    console.log("datasets[this.target] un def");
+                }
+                this.appendChart();
+            }
+        },
         cleanChart(){
             if(this.chart!=null)
                 this.chart.destroy();
@@ -86,7 +108,12 @@ export default{
                 data: this.chart_data,
                 options: this.options,
             });
-            // console.log(this.chart);
+        },
+        appendChart() {
+            window.datasets[this.target].push(this.chart_data.datasets[0]);
+            this.chart_data.datasets = window.datasets[this.target];
+
+            this.renderChart();
         },
         checkSize(){
             if(this.width==null||this.height==null)
@@ -97,10 +124,9 @@ export default{
         },
     },
     mounted(){
-        this.canvas = this.$refs.canvas;
-        this.context = this.$refs.canvas.getContext('2d');
+        this.initTargetCanvas();
         this.checkSize();
-        this.renderChart();
+        // this.renderChart();
     },
     beforeDestroy(){
         this.cleanChart();

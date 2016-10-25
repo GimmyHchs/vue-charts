@@ -1,5 +1,5 @@
 <template>
-<canvas ref="canvas" :width="width" :height="height">
+<canvas v-if="!target" ref="canvas" :width="width" :height="height">
 </template>
 <script>
 export default {
