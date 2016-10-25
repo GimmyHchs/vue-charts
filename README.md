@@ -26,7 +26,9 @@ Base on **Vue2**, wrapper for **ChartJs**.
 
 #Install
 	npm install hchs-vue-charts   
+    
 or  
+
 	yarn add hchs-vue-charts  
 
 
