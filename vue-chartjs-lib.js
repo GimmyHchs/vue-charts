@@ -124,8 +124,8 @@ export default{
         },
     },
     mounted(){
-        this.initTargetCanvas();
         this.checkSize();
+        this.initTargetCanvas();
         // this.renderChart();
     },
     beforeDestroy(){
