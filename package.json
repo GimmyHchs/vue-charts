@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/hchstera/vue-charts.git"
   },
+  "dependencies":{
+    "chart.js" : "2.3.0"
+  },
   "keywords": [
     "vue",
     "chart",
