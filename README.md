@@ -3,7 +3,7 @@ Base on **Vue2**, wrapper for **ChartJs**.
 -[Vue js](https://vuejs.org/)  
 -[Chart js](http://www.chartjs.org/)  
 -Work well with [Laravel](https://laravel.com/)  
--Degree of completion 50%  
+-Degree of completion 60%  
 
 # Render a Chart Easily  
 -Single Line
