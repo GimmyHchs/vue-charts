@@ -4,7 +4,7 @@ Base on **Vue2**, wrapper for **ChartJs**.
 -[Chart js](http://www.chartjs.org/)  
 -Work well with [Laravel](https://laravel.com/)  
 -vue-charts.js (dist) 9.0kb now  
--Degree of completion 60%  
+-Degree of completion 65%  
 
 # Render a Chart Easily  
 -Single Line
@@ -25,7 +25,10 @@ Base on **Vue2**, wrapper for **ChartJs**.
 [NPM Package](https://www.npmjs.com/package/hchs-vue-charts)
 
 #Install
-	npm install hchs-vue-charts
+	npm install hchs-vue-charts   
+or
+	yarn add hchs-vue-charts  
+
 
 #Notice
 - vue-charts base on Vue 2  
@@ -53,7 +56,7 @@ Base on **Vue2**, wrapper for **ChartJs**.
     </script>
    ```   
 2.Done!   
-[CDN demo](http://vue-charts-demo.hchspersonal.tk/demo.html)   
+[dist&CDN Demo](http://vue-charts-demo.hchspersonal.tk/demo.html)   
 ![](https://raw.githubusercontent.com/hchstera/vue-charts/master/pictures/cdn_demo.png)
 
 #How to use --- I'm using Laravel
@@ -93,13 +96,12 @@ Base on **Vue2**, wrapper for **ChartJs**.
     require('./bootstrap');
 
 	// chartjs package
-    window.Chart = require('chart.js');
+	require('chart.js');
     // vue-charts package
-    window.VueCharts = require('hchs-vue-charts');
+    require('hchs-vue-charts');
     // register component, here we just register chartjs_line
-    Vue.component('chartjs-line', VueCharts.chartjs_line);
-
-
+    Vue.component('chartjs-line', chartjs_line);
+    // Vue.component('chartjs-bar', chartjs_bar); ... etc.
 
     /**
      * Next, we will create a fresh Vue application instance and attach it to
@@ -124,27 +126,27 @@ Base on **Vue2**, wrapper for **ChartJs**.
 
 
 ```html
-   <body>
-        <!--vue root id="app"-->
-        <div id="app" class="content">
-            <!--line chart component-->
-            <chartjs-line></chartjs-line>
-            <div class="title m-b-md">
-                Laravel
-            </div>
+	<body>
+	  <div class="flex-center position-ref full-height">
+		  <div id="app" class="content">
+			  <!--line chart component-->
+			  <chartjs-line></chartjs-line>
+			  <div class="title m-b-md">
+				  Laravel
+			  </div>
 
-            <div class="links">
-                <a href="https://laravel.com/docs">Documentation</a>
-                <a href="https://laracasts.com">Laracasts</a>
-                <a href="https://laravel-news.com">News</a>
-                <a href="https://forge.laravel.com">Forge</a>
-                <a href="https://github.com/laravel/laravel">GitHub</a>
-            </div>
-        </div>
-   </body>
-
-   <!--set script src-->
-   <script src="{{asset('js/app.js')}}"></script>
+			  <div class="links">
+				  <a href="https://laravel.com/docs">Documentation</a>
+				  <a href="https://laracasts.com">Laracasts</a>
+				  <a href="https://laravel-news.com">News</a>
+				  <a href="https://forge.laravel.com">Forge</a>
+				  <a href="https://github.com/laravel/laravel">GitHub</a>
+			  </div>
+		  </div>
+	  </div>
+  	</body>
+  	<!--set script src-->
+  	<script src="{{asset('js/app.js')}}"></script>
    ```     
 
 
