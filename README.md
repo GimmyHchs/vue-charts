@@ -5,8 +5,11 @@ Base on **Vue2**, wrapper for **ChartJs**.
 -Work well with [Laravel](https://laravel.com/)  
 -Degree of completion 50%  
 
-# Easy To Render a Chart
-![](https://raw.githubusercontent.com/hchstera/vue-charts/master/pictures/easy_use.png)
+# Render a Chart Easily  
+-Single Line
+![](https://raw.githubusercontent.com/hchstera/vue-charts/master/pictures/easy_use.png)  
+-Multiple Line
+![](https://raw.githubusercontent.com/hchstera/vue-charts/master/pictures/multiple.png)  
 
 # Document and Demo
 [Home page](http://vue-charts-demo.hchspersonal.tk/)    
