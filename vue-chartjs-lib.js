@@ -112,8 +112,6 @@ export default{
         appendChart() {
             window.datasets[this.target].push(this.chart_data.datasets[0]);
             this.chart_data.datasets = window.datasets[this.target];
-
-            this.renderChart();
         },
         checkSize(){
             if(this.width==null||this.height==null)
