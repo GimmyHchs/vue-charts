@@ -13,20 +13,20 @@ Base on **Vue2**, wrapper for **ChartJs**.
 ![](https://raw.githubusercontent.com/hchstera/vue-charts/master/pictures/multiple.png)  
 
 # Document and Demo
-[Home page](http://vue-charts-demo.hchspersonal.tk/)    
-[Line](http://vue-charts-demo.hchspersonal.tk/line)   
-[Bar](http://vue-charts-demo.hchspersonal.tk/bar)   
-[Radar](http://vue-charts-demo.hchspersonal.tk/radar)   
-[Polar Area](http://vue-charts-demo.hchspersonal.tk/polar-area)   
-[Pie](http://vue-charts-demo.hchspersonal.tk/pie)   
-[Doughnut](http://vue-charts-demo.hchspersonal.tk/doughnut)   
+[Home page](http://vue-charts.hchspersonal.tk/)    
+[Line](http://vue-charts.hchspersonal.tk/line)   
+[Bar](http://vue-charts.hchspersonal.tk/bar)   
+[Radar](http://vue-charts.hchspersonal.tk/radar)   
+[Polar Area](http://vue-charts.hchspersonal.tk/polar-area)   
+[Pie](http://vue-charts.hchspersonal.tk/pie)   
+[Doughnut](http://vue-charts.hchspersonal.tk/doughnut)   
 
 # NPM Package  
 [NPM Package](https://www.npmjs.com/package/hchs-vue-charts)
 
 #Install
 	npm install hchs-vue-charts   
-    
+
 or  
 
 	yarn add hchs-vue-charts  
@@ -58,7 +58,7 @@ or
     </script>
    ```   
 2.Done!   
-[dist&CDN Demo](http://vue-charts-demo.hchspersonal.tk/demo.html)   
+[dist&CDN Demo](http://vue-charts.hchspersonal.tk/demo.html)   
 ![](https://raw.githubusercontent.com/hchstera/vue-charts/master/pictures/cdn_demo.png)
 
 #How to use --- I'm using Laravel
