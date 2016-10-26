@@ -4,7 +4,7 @@ Base on **Vue2**, wrapper for **ChartJs**.
 -[Chart js](http://www.chartjs.org/)  
 -Work well with [Laravel](https://laravel.com/)  
 -vue-charts.js (dist) 9.0kb now  
--Degree of completion 65%  
+-Degree of completion 70%  
 
 # Render a Chart Easily  
 -Single Line
