@@ -9,7 +9,7 @@ Base on **Vue2**, wrapper for **ChartJs**.
 # Render a Chart Easily  
 -Single Line
 ![](https://raw.githubusercontent.com/hchstera/vue-charts/master/pictures/easy_use.png)  
--Multiple Line
+-Multiple Bar
 ![](https://raw.githubusercontent.com/hchstera/vue-charts/master/pictures/multiple.png)  
 
 # Features  
