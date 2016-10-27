@@ -3,7 +3,7 @@ Base on **Vue2**, wrapper for **ChartJs**.
 -[Vue js](https://vuejs.org/)  
 -[Chart js](http://www.chartjs.org/)  
 -Work well with [Laravel](https://laravel.com/)  
--vue-charts.js (dist) 9.0kb now  
+-vue-charts.js (dist) 9.5kb now  
 -Degree of completion 75%  
 
 # Render a Chart Easily  
@@ -16,6 +16,7 @@ Base on **Vue2**, wrapper for **ChartJs**.
 -Single Chart   
 -Multiple Chart   
 -[Override Datasets](http://vue-charts.hchspersonal.tk/line#datasets)    
+-[Pass Json data](http://vue-charts.hchspersonal.tk/passjson)    
 -[DataBinding & Auto Render](http://vue-charts.hchspersonal.tk/databinding)    
 
 
