@@ -28,7 +28,8 @@ Base on **Vue2**, wrapper for **ChartJs**.
 [Polar Area](http://vue-charts.hchspersonal.tk/polar-area)   
 [Pie](http://vue-charts.hchspersonal.tk/pie)   
 [Doughnut](http://vue-charts.hchspersonal.tk/doughnut)   
-[DataBinding](http://vue-charts.hchspersonal.tk/databinding)    
+[DataBinding](http://vue-charts.hchspersonal.tk/databinding)  
+[Jsondata](http://vue-charts.hchspersonal.tk/passjson)      
 
 # NPM Package  
 [NPM Package](https://www.npmjs.com/package/hchs-vue-charts)
