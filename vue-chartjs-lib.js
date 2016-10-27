@@ -41,6 +41,10 @@ export default{
         datasets:{
             type: Array,
             default: () => null,
+        },
+        bind:{
+            type: Boolean,
+            default: () =>false,
         }
     },
     data () {
@@ -69,18 +73,33 @@ export default{
         };
     },
     watch:{
-        chart_data(val){
-            if(!this.isOverride)
-                this.renderChart();
+        data: {
+            handler: function (val, oldVal) {
+                if(!this.isOverride&&this.bind)
+                {
+                    // console.log('bind renderChart');
+                    this.renderChart();
+                }
+            },
+            deep: false
         },
-        labels(val){
-            if(!this.isOverride)
-                this.renderChart();
+        labels: {
+            handler: function (val, oldVal) {
+                if(!this.isOverride&&this.bind)
+                {
+                    // console.log('bind renderChart');
+                    this.renderChart();
+                }
+            },
+            deep: false
         },
         datasets: {
             handler: function (val, oldVal) {
-                if(this.isOverride)
+                if(this.isOverride&&this.isBind)
+                {
+                    // console.log('bind renderChart');
                     this.renderChart();
+                }
             },
             deep: true
         },
@@ -114,10 +133,11 @@ export default{
             {
                 this.setDatasets();
                 this.isOverride = true;
-                console.log('override the datasets');
+                // console.log('override the datasets');
             }
         },
         renderChart() {
+            console.log('renderChart');
             this.cleanChart();
             this.chart = new Chart(this.context, {
                 type: this.type,
@@ -126,8 +146,13 @@ export default{
             });
         },
         appendChart() {
+            console.log('appendChart');
             window.datasets[this.target].push(this.chart_data.datasets[0]);
             this.chart_data.datasets = window.datasets[this.target];
+            if(document.getElementById(this.target).getAttribute("count") == this.chart_data.datasets.length)
+            {
+                this.renderChart();
+            }
         },
         checkSize(){
             if(this.width==null||this.height==null)
@@ -141,7 +166,6 @@ export default{
         this.checkOverride();
         this.checkSize();
         this.initTargetCanvas();
-        // this.renderChart();
     },
     beforeDestroy(){
         this.cleanChart();

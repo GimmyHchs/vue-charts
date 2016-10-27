@@ -4,13 +4,20 @@ Base on **Vue2**, wrapper for **ChartJs**.
 -[Chart js](http://www.chartjs.org/)  
 -Work well with [Laravel](https://laravel.com/)  
 -vue-charts.js (dist) 9.0kb now  
--Degree of completion 70%  
+-Degree of completion 75%  
 
 # Render a Chart Easily  
 -Single Line
 ![](https://raw.githubusercontent.com/hchstera/vue-charts/master/pictures/easy_use.png)  
 -Multiple Line
 ![](https://raw.githubusercontent.com/hchstera/vue-charts/master/pictures/multiple.png)  
+
+# Features  
+-Single Chart   
+-Multiple Chart   
+[Override Datasets](http://vue-charts.hchspersonal.tk/line#datasets)    
+[DataBinding & Auto Render](http://vue-charts.hchspersonal.tk/databinding)    
+
 
 # Document and Demo
 [Home page](http://vue-charts.hchspersonal.tk/)    
@@ -20,6 +27,7 @@ Base on **Vue2**, wrapper for **ChartJs**.
 [Polar Area](http://vue-charts.hchspersonal.tk/polar-area)   
 [Pie](http://vue-charts.hchspersonal.tk/pie)   
 [Doughnut](http://vue-charts.hchspersonal.tk/doughnut)   
+[DataBinding](http://vue-charts.hchspersonal.tk/databinding)    
 
 # NPM Package  
 [NPM Package](https://www.npmjs.com/package/hchs-vue-charts)
