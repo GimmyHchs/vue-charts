@@ -15,8 +15,8 @@ Base on **Vue2**, wrapper for **ChartJs**.
 # Features  
 -Single Chart   
 -Multiple Chart   
-[Override Datasets](http://vue-charts.hchspersonal.tk/line#datasets)    
-[DataBinding & Auto Render](http://vue-charts.hchspersonal.tk/databinding)    
+-[Override Datasets](http://vue-charts.hchspersonal.tk/line#datasets)    
+-[DataBinding & Auto Render](http://vue-charts.hchspersonal.tk/databinding)    
 
 
 # Document and Demo
