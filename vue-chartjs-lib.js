@@ -37,12 +37,16 @@ export default{
         target: {
             type: String,
             default: () => null,
+        },
+        datasets:{
+            type: Array,
+            default: () => null,
         }
     },
     data () {
         return {
+            isOverride : false,
             type : null,
-            datasets : null,
             canvas : null,
             context : null,
             chart: null,
@@ -65,18 +69,25 @@ export default{
         };
     },
     watch:{
-        data(val){
-            // console.log(val);
-            this.renderChart();
+        chart_data(val){
+            if(!this.isOverride)
+                this.renderChart();
         },
         labels(val){
-            // console.log(val);
-            this.renderChart();
-        }
+            if(!this.isOverride)
+                this.renderChart();
+        },
+        datasets: {
+            handler: function (val, oldVal) {
+                if(this.isOverride)
+                    this.renderChart();
+            },
+            deep: true
+        },
     },
     methods:{
-        setDatasets(val){
-            this.datasets = val;
+        setDatasets(){
+            this.chart_data.datasets = this.datasets;
         },
         initTargetCanvas(){
             if(this.target==null){
@@ -90,16 +101,21 @@ export default{
                 if(typeof datasets == 'undefined')
                     window.datasets = [];
                 if(typeof datasets[this.target] == 'undefined')
-                {
                     window.datasets[this.target] =[];
-                    console.log("datasets[this.target] un def");
-                }
                 this.appendChart();
             }
         },
         cleanChart(){
             if(this.chart!=null)
                 this.chart.destroy();
+        },
+        checkOverride(){
+            if(this.datasets!=null)
+            {
+                this.setDatasets();
+                this.isOverride = true;
+                console.log('override the datasets');
+            }
         },
         renderChart() {
             this.cleanChart();
@@ -122,6 +138,7 @@ export default{
         },
     },
     mounted(){
+        this.checkOverride();
         this.checkSize();
         this.initTargetCanvas();
         // this.renderChart();
