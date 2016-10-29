@@ -3,8 +3,7 @@ Base on **Vue2**, wrapper for **ChartJs**.
 -[Vue js](https://vuejs.org/)  
 -[Chart js](http://www.chartjs.org/)  
 -Work well with [Laravel](https://laravel.com/)  
--vue-charts.js (dist) 9.5kb now  
--Degree of completion 75%  
+-Degree of completion 80%  
 
 # Render a Chart Easily  
 -Single Line
@@ -59,11 +58,9 @@ or
     <script src="js/vue-charts.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.min.js"></script>
     <script type="text/javascript">
+		Vue.use(VueCharts);
         const app = new Vue({
             el: '#app',
-            components: {
-                'chartjs-line': chartjs_line,
-            }
         });
     </script>
    ```   
@@ -111,9 +108,8 @@ or
 	require('chart.js');
     // vue-charts package
     require('hchs-vue-charts');
-    // register component, here we just register chartjs_line
-    Vue.component('chartjs-line', chartjs_line);
-    // Vue.component('chartjs-bar', chartjs_bar); ... etc.
+    Vue.use(VueCharts);
+
 
     /**
      * Next, we will create a fresh Vue application instance and attach it to

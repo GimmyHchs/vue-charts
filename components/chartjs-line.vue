@@ -6,7 +6,7 @@
 <script>
 export default {
     mixins: [
-        vue_charts.default,
+        VueCharts.core.default,
     ],
     props: {
         beginzero:{

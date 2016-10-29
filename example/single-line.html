@@ -1,0 +1,15 @@
+<body>
+    <div id="app">
+        <chartjs-line></chartjs-line>
+    </div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.js"></script>
+<script src="../dist/vue-charts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.min.js"></script>
+<script type="text/javascript">
+    Vue.use(VueCharts);
+    const app = new Vue({
+        el: '#app',
+    });
+</script>
