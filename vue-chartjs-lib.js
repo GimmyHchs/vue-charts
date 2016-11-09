@@ -42,6 +42,10 @@ export default{
             type: Array,
             default: () => null,
         },
+        option:{
+            type: Object,
+            default: () => null,
+        },
         bind:{
             type: Boolean,
             default: () =>false,
@@ -49,7 +53,8 @@ export default{
     },
     data () {
         return {
-            isOverride : false,
+            isDatasetsOverride : false,
+            isOptionOverride : false,
             type : null,
             canvas : null,
             context : null,
@@ -75,7 +80,7 @@ export default{
     watch:{
         data: {
             handler: function (val, oldVal) {
-                if(!this.isOverride&&this.bind)
+                if(!this.isDatasetsOverride&&this.bind)
                 {
                     // console.log('bind renderChart');
                     this.renderChart();
@@ -85,7 +90,7 @@ export default{
         },
         labels: {
             handler: function (val, oldVal) {
-                if(!this.isOverride&&this.bind)
+                if(!this.isDatasetsOverride&&this.bind)
                 {
                     // console.log('bind renderChart');
                     this.renderChart();
@@ -95,7 +100,7 @@ export default{
         },
         datasets: {
             handler: function (val, oldVal) {
-                if(this.isOverride&&this.isBind)
+                if(this.isDatasetsOverride&&this.isBind)
                 {
                     // console.log('bind renderChart');
                     this.renderChart();
@@ -107,6 +112,9 @@ export default{
     methods:{
         setDatasets(){
             this.chart_data.datasets = this.datasets;
+        },
+        setOption(){
+            this.options = this.option;
         },
         initTargetCanvas(){
             if(this.target==null){
@@ -132,12 +140,18 @@ export default{
             if(this.datasets!=null)
             {
                 this.setDatasets();
-                this.isOverride = true;
+                this.isDatasetsOverride = true;
+                // console.log('override the datasets');
+            }
+            if(this.option!=null)
+            {
+                this.setOption();
+                this.isOptionOverride = true;
                 // console.log('override the datasets');
             }
         },
         renderChart() {
-            console.log('renderChart');
+            // console.log('renderChart');
             this.cleanChart();
             this.chart = new Chart(this.context, {
                 type: this.type,
@@ -146,7 +160,7 @@ export default{
             });
         },
         appendChart() {
-            console.log('appendChart');
+            // console.log('appendChart');
             window.datasets[this.target].push(this.chart_data.datasets[0]);
             this.chart_data.datasets = window.datasets[this.target];
             if(document.getElementById(this.target).getAttribute("count") == this.chart_data.datasets.length)
@@ -155,7 +169,7 @@ export default{
             }
         },
         checkSize(){
-            if(this.width==null||this.height==null)
+            if((this.width==null||this.height==null) && !this.isOptionOverride)
             {
                 this.options.responsive = true;
                 this.options.maintainAspectRatio = true;

@@ -3,7 +3,7 @@ Base on **Vue2**, wrapper for **ChartJs**.
 -[Vue js](https://vuejs.org/)  
 -[Chart js](http://www.chartjs.org/)  
 -Work well with [Laravel](https://laravel.com/)  
--Degree of completion 80%  
+-Degree of completion 90%  
 
 # Render a Chart Easily  
 -Single Line
@@ -15,6 +15,7 @@ Base on **Vue2**, wrapper for **ChartJs**.
 -Single Chart   
 -Multiple Chart   
 -[Override Datasets](http://vue-charts.hchspersonal.tk/line#datasets)    
+-[Override Option](http://vue-charts.hchspersonal.tk/line#option)    
 -[Pass Json data](http://vue-charts.hchspersonal.tk/passjson)    
 -[DataBinding & Auto Render](http://vue-charts.hchspersonal.tk/databinding)    
 
@@ -68,7 +69,7 @@ or
 [dist&CDN Demo](http://vue-charts.hchspersonal.tk/demo.html)   
 ![](https://raw.githubusercontent.com/hchstera/vue-charts/master/pictures/cdn_demo.png)
 
-#How to use --- I'm using Laravel
+#How to use --- Laravel Elixir
 1.Checkout your gulpfile.js in your laravel project  
 
 ```javascript
