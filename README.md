@@ -16,7 +16,7 @@ Base on **Vue2**, wrapper for **ChartJs**.
 # Features  
 -Single Chart   
 -Multiple Chart   
--Multiple Mix Chart   
+-[Multiple Mix Chart](http://vue-charts.hchspersonal.tk/mixcharts)    
 -[Override Datasets](http://vue-charts.hchspersonal.tk/line#datasets)    
 -[Override Option](http://vue-charts.hchspersonal.tk/line#option)    
 -[Pass Json data](http://vue-charts.hchspersonal.tk/passjson)    
