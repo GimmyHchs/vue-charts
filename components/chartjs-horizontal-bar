@@ -22,6 +22,16 @@ export default {
                     data: this.data,
                 }, ],
             },
+            options: {
+                scales: {
+                    yAxes: [{
+                        stacked: false
+                    }],
+                    xAxes: [{
+                        stacked: true
+                    }]
+                }
+            }
         };
     },
 }
