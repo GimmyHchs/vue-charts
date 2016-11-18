@@ -3,17 +3,20 @@ Base on **Vue2**, wrapper for **ChartJs**.
 -[Vue js](https://vuejs.org/)  
 -[Chart js](http://www.chartjs.org/)  
 -Work well with [Laravel](https://laravel.com/)  
--Degree of completion 90%  
+
 
 # Render a Chart Easily  
 -Single Line
 ![](https://raw.githubusercontent.com/hchstera/vue-charts/master/pictures/easy_use.png)  
 -Multiple Bar
 ![](https://raw.githubusercontent.com/hchstera/vue-charts/master/pictures/multiple.png)  
+-Multiple Mix Chart
+![](https://raw.githubusercontent.com/hchstera/vue-charts/master/pictures/mix.png)  
 
 # Features  
 -Single Chart   
 -Multiple Chart   
+-Multiple Mix Chart   
 -[Override Datasets](http://vue-charts.hchspersonal.tk/line#datasets)    
 -[Override Option](http://vue-charts.hchspersonal.tk/line#option)    
 -[Pass Json data](http://vue-charts.hchspersonal.tk/passjson)    

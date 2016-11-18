@@ -36,6 +36,7 @@ export default {
             chart_data: {
                 labels: this.labels,
                 datasets: [{
+                    type: 'line',
                     label: this.datalabel,
                     fill: this.fill,
                     lineTension:  this.linetension,

@@ -14,6 +14,7 @@ export default {
             chart_data: {
                 labels: this.labels,
                 datasets: [{
+                    type: 'bar',
                     label: this.datalabel,
                     backgroundColor: this.backgroundcolor,
                     borderColor: this.bordercolor,
