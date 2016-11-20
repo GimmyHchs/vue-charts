@@ -27,6 +27,7 @@ Base on **Vue2**, wrapper for **ChartJs**.
 [Home page](http://vue-charts.hchspersonal.tk/)    
 [Line](http://vue-charts.hchspersonal.tk/line)   
 [Bar](http://vue-charts.hchspersonal.tk/bar)   
+[Horizontal Bar](http://vue-charts.hchspersonal.tk/bar#h-default)   
 [Radar](http://vue-charts.hchspersonal.tk/radar)   
 [Polar Area](http://vue-charts.hchspersonal.tk/polar-area)   
 [Pie](http://vue-charts.hchspersonal.tk/pie)   
@@ -162,6 +163,9 @@ or
    ```     
 
 
-
 5.Done
-![](https://raw.githubusercontent.com/hchstera/vue-charts/master/pictures/welcome_demo.PNG)
+![](https://raw.githubusercontent.com/hchstera/vue-charts/master/pictures/welcome_demo.PNG)     
+
+
+# Thanks  
+[@yeknava](https://github.com/yeknava)     
