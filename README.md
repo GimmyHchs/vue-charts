@@ -168,4 +168,4 @@ or
 
 
 # Thanks  
-[@yeknava](https://github.com/yeknava)     
+[@yeknava](https://github.com/yeknava) - Horizontal Bar    
