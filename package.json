@@ -1,8 +1,8 @@
 {
   "name": "hchs-vue-charts",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Base on Vue2.0 wrapper for ChartJs.",
-  "main": "dis/vue-charts.min.js",
+  "main": "dist/vue-charts.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
