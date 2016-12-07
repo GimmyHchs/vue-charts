@@ -80,9 +80,8 @@ export default{
     watch:{
         data: {
             handler: function (val, oldVal) {
-                if(!this.isDatasetsOverride&&this.bind&& !arraysEqual(val, oldVal))
+                if(!this.isDatasetsOverride&&this.bind)
                 {
-                    console.log('bind data renderChart');
                     this.renderChart();
                 }
             },
@@ -90,9 +89,8 @@ export default{
         },
         labels: {
             handler: function (val, oldVal) {
-                if(this.bind && !this.arraysEqual(val, oldVal))
+                if(this.bind)
                 {
-                    console.log('bind labels renderChart');
                     this.chart_data.labels = val;
                     this.renderChart();
                 }
@@ -103,25 +101,18 @@ export default{
             handler: function (val, oldVal) {
                 if(this.isDatasetsOverride&&this.bind)
                 {
-                    console.log('bind datasets renderChart');
                     this.cleanChart();
-                    this.setDatasets();
-                    this.renderChart();
+                    this.sleep(5).then(() => {
+                        this.renderChart();
+                    })
                 }
             },
             deep: true,
         },
     },
     methods:{
-        arraysEqual(a, b) {
-            if (a === b) return true;
-            if (a == null || b == null) return false;
-            if (a.length != b.length) return false;
-            for (var i = 0; i < a.length; ++i) {
-              if (a[i] !== b[i]) return false;
-            }
-
-            return true;
+        sleep (time) {
+            return new Promise((resolve) => setTimeout(resolve, time));
         },
         setDatasets(){
             this.chart_data.datasets = this.datasets;
