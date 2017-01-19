@@ -82,10 +82,11 @@ export default{
             handler: function (val, oldVal) {
                 if(!this.isDatasetsOverride&&this.bind)
                 {
+                    this.chart_data.datasets[0].data = this.data;
                     this.renderChart();
                 }
             },
-            deep: false
+            deep: true
         },
         labels: {
             handler: function (val, oldVal) {
