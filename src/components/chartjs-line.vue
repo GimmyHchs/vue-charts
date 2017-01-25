@@ -28,6 +28,14 @@ export default {
         pointbackgroundcolor: {
             type: String,
             default: () => "#fff",
+        },
+        pointhoverbackgroundcolor: {
+            type: String,
+            default: () => "rgba(220,220,220,1)",
+        },
+        pointhoverbordercolor: {
+            type: String,
+            default: () => "rgba(220,220,220,1)",
         }
     },
     data() {
@@ -50,8 +58,8 @@ export default {
                     pointBackgroundColor: this.pointbackgroundcolor,
                     pointBorderWidth: 1,
                     pointHoverRadius: 5,
-                    pointHoverBackgroundColor: "rgba(75,192,192,1)",
-                    pointHoverBorderColor: "rgba(220,220,220,1)",
+                    pointHoverBackgroundColor: this.pointhoverbackgroundcolor,
+                    pointHoverBorderColor: this.pointhoverbordercolor,
                     pointHoverBorderWidth: 2,
                     pointRadius: 1,
                     pointHitRadius: 10,
