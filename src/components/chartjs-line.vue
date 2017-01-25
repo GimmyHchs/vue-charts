@@ -31,11 +31,19 @@ export default {
         },
         pointhoverbackgroundcolor: {
             type: String,
-            default: () => "rgba(220,220,220,1)",
+            default: () => "rgba(75,192,192,1)",
         },
         pointhoverbordercolor: {
             type: String,
             default: () => "rgba(220,220,220,1)",
+        },
+        pointborderwidth: {
+            type: Number,
+            default: () => 1,
+        },
+        pointhoverborderwidth:{
+            type: Number,
+            default: () => 2,
         }
     },
     data() {
@@ -56,11 +64,11 @@ export default {
                     borderJoinStyle: 'miter',
                     pointBorderColor: this.pointbordercolor,
                     pointBackgroundColor: this.pointbackgroundcolor,
-                    pointBorderWidth: 1,
+                    pointBorderWidth: this.pointborderwidth,
                     pointHoverRadius: 5,
                     pointHoverBackgroundColor: this.pointhoverbackgroundcolor,
                     pointHoverBorderColor: this.pointhoverbordercolor,
-                    pointHoverBorderWidth: 2,
+                    pointHoverBorderWidth: this.pointhoverborderwidth,
                     pointRadius: 1,
                     pointHitRadius: 10,
                     data: this.data,
