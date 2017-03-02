@@ -1,4 +1,4 @@
-# vue-charts
+# vue-charts [![Package Quality](http://npm.packagequality.com/shield/hchs-vue-charts.svg)](http://packagequality.com/#?package=hchs-vue-charts)
 Base on **Vue2**, wrapper for **ChartJs**.    
 -[Vue js](https://vuejs.org/)  
 -[Chart js](http://www.chartjs.org/)  
