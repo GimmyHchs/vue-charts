@@ -46,6 +46,14 @@ export default {
                     data: this.data
                 }],
             },
+            options: {
+                scale: {
+                    reverse: true,
+                    ticks: {
+                        beginAtZero: this.beginzero
+                    }
+                }
+            },
         };
     },
 }

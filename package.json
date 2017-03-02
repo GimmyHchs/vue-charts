@@ -1,6 +1,6 @@
 {
   "name": "hchs-vue-charts",
-  "version": "1.2.7",
+  "version": "1.2.8",
   "description": "Base on Vue2.0 wrapper for ChartJs.",
   "main": "dist/vue-charts.min.js",
   "scripts": {
