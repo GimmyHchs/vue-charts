@@ -1,26 +1,26 @@
 # vue-charts [![Package Quality](http://npm.packagequality.com/shield/hchs-vue-charts.svg)](http://packagequality.com/#?package=hchs-vue-charts)
 Base on **Vue2**, wrapper for **ChartJs**.    
--[Vue js](https://vuejs.org/)  
--[Chart js](http://www.chartjs.org/)  
--Work well with [Laravel](https://laravel.com/)  
+- [Vue js](https://vuejs.org/)  
+- [Chart js](http://www.chartjs.org/)  
+- Work well with [Laravel](https://laravel.com/)  
 
 
 # Render a Chart Easily  
--Single Line
+- Single Line
 ![](https://raw.githubusercontent.com/hchstera/vue-charts/master/pictures/easy_use.png)  
--Multiple Bar
+- Multiple Bar
 ![](https://raw.githubusercontent.com/hchstera/vue-charts/master/pictures/multiple.png)  
--Multiple Mix Chart
+- Multiple Mix Chart
 ![](https://raw.githubusercontent.com/hchstera/vue-charts/master/pictures/mix.png)  
 
 # Features  
--Single Chart   
--Multiple Chart   
--[Multiple Mix Chart](http://vue-charts.hchspersonal.tk/mixcharts)    
--[Override Datasets](http://vue-charts.hchspersonal.tk/line#datasets)    
--[Override Option](http://vue-charts.hchspersonal.tk/line#option)    
--[Pass Json data](http://vue-charts.hchspersonal.tk/passjson)    
--[DataBinding & Auto Render](http://vue-charts.hchspersonal.tk/databinding)    
+- Single Chart   
+- Multiple Chart   
+- [Multiple Mix Chart](http://vue-charts.hchspersonal.tk/mixcharts)    
+- [Override Datasets](http://vue-charts.hchspersonal.tk/line#datasets)    
+- [Override Option](http://vue-charts.hchspersonal.tk/line#option)    
+- [Pass Json data](http://vue-charts.hchspersonal.tk/passjson)    
+- [DataBinding & Auto Render](http://vue-charts.hchspersonal.tk/databinding)    
 
 
 # Document and Demo
@@ -38,7 +38,8 @@ Base on **Vue2**, wrapper for **ChartJs**.
 # NPM Package  
 [NPM Package](https://www.npmjs.com/package/hchs-vue-charts)
 
-#Install
+# Install
+
 	npm install hchs-vue-charts   
 
 or  
@@ -46,11 +47,12 @@ or
 	yarn add hchs-vue-charts  
 
 
-#Notice
+# Notice
 - vue-charts base on Vue 2  
 - vue-charts base on Chart.js 2  
 
-#How to use --- dist & CDN
+# How to use --- dist & CDN
+
 1.build a page
 ```html
     <body>
@@ -73,7 +75,8 @@ or
 [dist&CDN Demo](http://vue-charts.hchspersonal.tk/demo.html)   
 ![](https://raw.githubusercontent.com/hchstera/vue-charts/master/pictures/cdn_demo.png)
 
-#How to use --- Laravel Elixir
+# How to use --- Laravel Elixir
+
 1.Checkout your gulpfile.js in your laravel project  
 
 ```javascript
