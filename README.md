@@ -1,3 +1,6 @@
+# Deprecated Package
+:fire: This package is no longer maintain. :fire: 
+
 # vue-charts [![Package Quality](http://npm.packagequality.com/shield/hchs-vue-charts.svg)](http://packagequality.com/#?package=hchs-vue-charts)
 Base on **Vue2**, wrapper for **ChartJs**.    
 - [Vue js](https://vuejs.org/)  
@@ -16,24 +19,11 @@ Base on **Vue2**, wrapper for **ChartJs**.
 # Features  
 - Single Chart   
 - Multiple Chart   
-- [Multiple Mix Chart](http://vue-charts.hchspersonal.tk/mixcharts)    
-- [Override Datasets](http://vue-charts.hchspersonal.tk/line#datasets)    
-- [Override Option](http://vue-charts.hchspersonal.tk/line#option)    
-- [Pass Json data](http://vue-charts.hchspersonal.tk/passjson)    
-- [DataBinding & Auto Render](http://vue-charts.hchspersonal.tk/databinding)    
-
-
-# Document and Demo
-[Home page](http://vue-charts.hchspersonal.tk/)    
-[Line](http://vue-charts.hchspersonal.tk/line)   
-[Bar](http://vue-charts.hchspersonal.tk/bar)   
-[Horizontal Bar](http://vue-charts.hchspersonal.tk/bar#h-default)   
-[Radar](http://vue-charts.hchspersonal.tk/radar)   
-[Polar Area](http://vue-charts.hchspersonal.tk/polar-area)   
-[Pie](http://vue-charts.hchspersonal.tk/pie)   
-[Doughnut](http://vue-charts.hchspersonal.tk/doughnut)   
-[DataBinding](http://vue-charts.hchspersonal.tk/databinding)  
-[Jsondata](http://vue-charts.hchspersonal.tk/passjson)      
+- [Multiple Mix Chart]
+- [Override Datasets]
+- [Override Option]
+- [Pass Json data]
+- [DataBinding & Auto Render]
 
 # NPM Package  
 [NPM Package](https://www.npmjs.com/package/hchs-vue-charts)
@@ -72,7 +62,6 @@ or
     </script>
    ```   
 2.Done!   
-[dist&CDN Demo](http://vue-charts.hchspersonal.tk/demo.html)   
 ![](https://raw.githubusercontent.com/hchstera/vue-charts/master/pictures/cdn_demo.png)
 
 # How to use --- Laravel Elixir
